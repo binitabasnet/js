@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem('test','stored in local storage')
+        const showItem=localStorage.getItem('test')
+        document.write(`${showItem}`)
+
+        //JSON-javascript object notation
+        const details={
+            "firstname":"Binita",
+            "Lastname":"Basnet",
+            "subjects":"['html','css','bootstrap','javascript']"
+        }
+        // localStorage.setItem("student",details)
+        const object_string=JSON.stringify(details)//converting object to string
+        localStorage.setItem("student",object_string)
+        const show=localStorage.getItem("student")
+        console.log(show)
+
+        const string_object=JSON.parse(show)
+        console.log(string_object)
+        console.log(string_object.firstname)
+           
+
+        
+    </script>
+</body>
+</html>

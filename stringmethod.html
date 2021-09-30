@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stringmethod</title>
+</head>
+<body>
+    <script>
+        const text="welcome to dursikhshya to learn js"
+        document.write(`${text} <br>`)
+        //count the length of string
+        document.write(`${text.length} <br>`)
+        //search method
+        document.write(`${text.search('to')} <br>`)
+        //to find position of particular string in string
+        document.write(`${text.indexOf('to')} <br>`)
+        //to find last position of repeated string in string
+        document.write(`${text.lastIndexOf('to')} <br>`)
+        //to replace the string
+        document.write(`${text.replace('learn','read')} <br>`)
+        //replace double string
+        document.write(`${text.replaceAll('to','for')} <br>`)
+        // to uppercase 
+        document.write(`${text.toUpperCase()} <br>`)
+        //to lowercase
+        document.write(`${text.toLowerCase()} <br>`)
+
+        //substring-small part of string
+        //slice(start,end)
+        //substring(start,end)
+        //substr(start,length)
+
+        document.write(`${text.slice(10,20)}<br>`)
+        document.write(`${text.substring(10,20)}<br>`)
+        document.write(`${text.substr(10,20)} <br>`)
+        
+
+
+    </script>
+</body>
+</html>

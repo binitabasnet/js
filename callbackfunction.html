@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callbackfunction</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        const news=[
+            {newsTitle:"first title",content:"javascript" },
+            {newsTitle:"Second title",content:"callback function topic"},
+            {newsTitle:"third title",content:"hello world"}
+        ]
+
+        //define the function
+        const showNews=()=>{
+            //setTimeout(slider,2000)
+            setTimeout(()=>{
+                let result=""
+                news.forEach((post)=>{
+                    result+=`<li>${post.newsTitle}</li>`
+                })
+                document.querySelector('div').innerHTML=result
+
+            },2000)
+        }
+
+
+        //call the function
+    //   showNews()
+       
+
+        //define the function addNews
+        // const addNews=(newdata)=>{
+        //     setTimeout(()=>{
+        //         //to add the data to array
+        //         news.push(newdata)
+
+        //     },3000)
+        // }
+
+        //call the function addNews
+        // addNews({newsTitle:"fourth title",content:"added from push method"})
+
+        //define the function with callback function
+        const addNews=(newdata,callback)=>{
+            setTimeout(()=>{
+                news.push(newdata)
+                //call the callback function after adding new data
+                callback()
+
+            },3000)
+        }
+
+        //call the function addNews  with callback function showNews
+        addNews({newsTitle:"fourth title",content:"added from push method"},showNews)
+        
+    </script>
+</body>
+</html>

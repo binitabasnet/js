@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <p>
+        array->collection of homogeneous object i.e. a variable contain multiple  values
+    </p>
+    <pre>
+        example:
+        const vegetable=['cauliflower','potato','carrot']
+    </pre>
+    <script>
+        const fruits=['banana','apple','mango','papaya','orange']
+        document.write(`${fruits}<br>`)
+        //to access single value from array
+        document.write(`${fruits[0]} <br>`)
+        // to count the length of array
+        document.write(`${fruits.length}<br>`)
+        //to remove last array element
+        fruits.pop()
+        document.write(`${fruits}<br>`)
+        //to add last element in array
+        fruits.push('cherry')
+        document.write(`${fruits}<br>`)
+
+        //to remove first array element
+        fruits.shift()
+        document.write(`${fruits}<br>`)
+
+        //to add new element to first position in array
+        fruits.unshift('guava')
+        document.write(`${fruits} <br>`)
+
+        //splice for adding
+        fruits.splice(2,0,'kiwi','melon')
+        //element is added from position 2
+        //0 means no array element is removed
+        document.write(`${fruits}<br>`)
+
+        //for removing
+        fruits.splice(3,2)
+        //here 2 elements are removed from position 3
+        document.write(`${fruits}<br>`)
+        
+        //slice to break the array
+        var vegetables=['cauliflower','potato','carrot','tomato','brinjal']
+        var veggies =vegetables.slice(1,3)
+        document.write(`${veggies}<br>`)
+
+    </script>
+</body>
+</html>

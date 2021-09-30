@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numbermethod</title>
+</head>
+<body>
+    <script>
+        const a=20.34567
+        // use toFixed method to show how many numbers to print after
+        document.write(`${a.toFixed(2)} <br>`)
+        //use toPrecison method to show how many numbers to be printed as a whole
+        document.write(`${a.toPrecision(3)} <br>`)
+
+        //to convert string to number
+        //Number()
+        //parseInt() 2
+        //parseFloat() 2.35
+
+        const b="35"
+        const c=Number(b)
+        document.write(typeof(b))
+        document.write(`<br>`)
+        document.write(typeof(c))
+        document.write(`<br>`)
+
+        const d=Number("hello")
+        document.write(`${d} <br>`)
+
+        document.write(parseInt("20.3456"))
+        document.write(`<br>`)
+        document.write(parseFloat("20.3456"))
+    </script>
+</body>
+</html>

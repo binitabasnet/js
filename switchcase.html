@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case</title>
+</head>
+<body>
+    <script>
+         const x=Number(prompt('enter first number'))
+         const y=Number(prompt('enter second number'))
+         const operator=prompt(`action? +,-,%,\,*`)
+         switch (operator) {
+             case "+":
+                 const a=x+y
+                 document.write(`addition is ${a}`)
+                 
+                 break;
+         
+             case "-":
+                 const b=x-y
+                 document.write(`substraction is ${b}`)
+                 break;
+
+             case "*"  :
+                 const c=x*y
+                 document.write(`multiplication is ${c}`)  
+                 break
+
+             case "%":
+                 const d=x%y
+                 document.write(`division is ${d}`)   
+                 break 
+
+             case "/":
+                 const e=x/y
+                 document.write(`remainder is ${e}`)    
+                 break
+
+             default:
+                 document.write(`invalid operator`)    
+         }
+    </script>
+   
+</body>
+</html>
