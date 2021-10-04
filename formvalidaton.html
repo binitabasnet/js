@@ -10,7 +10,7 @@
 <body>
     <div class="d-flex justify-content-center mt-5">
         <div class="col-md-6 shadow-lg p-3">
-            <form action="">
+            <form action="" onsubmit="return validForm()">
                 <h2 class="text-muted text-center">Register Form</h2>
                 <div class="mb-3">
                 <label for="firstname">Firstname</label>
@@ -33,7 +33,7 @@
             <span id="passwordmsg"></span>
             </div>
             <div class="mb-3">
-                <input type="button" class="btn btn-primary" value="Register">
+                <input type="submit" class="btn btn-primary" value="Register">
             </div>
             </form>
         </div>
